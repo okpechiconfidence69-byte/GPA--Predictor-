@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Miva GPA Predictor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <h1>GPA Predictor</h1>
+        <p>Enter your expected grades to see your result.</p>
+        
+        <div id="course-list">
+            <div class="row">
+                <input type="number" class="units" placeholder="Units (e.g. 3)">
+                <select class="grade">
+                    <option value="5">A (5.0)</option>
+                    <option value="4">B (4.0)</option>
+                    <option value="3">C (3.0)</option>
+                    <option value="2">D (2.0)</option>
+                    <option value="1">E (1.0)</option>
+                    <option value="0">F (0.0)</option>
+                </select>
+            </div>
+        </div>
+
+        <button onclick="calculate()">Show My GPA</button>
+        <h2 id="display">0.00</h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
